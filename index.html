@@ -4,975 +4,975 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>AA3 · Construye y valida tu instrumento de evaluación | SISE</title>
+<title>Construye y valida tu instrumento de evaluación | SISE</title>
 
 <style>
 :root{
-  --red:#FF0E49;
-  --red-dark:#D9003E;
-  --dark:#241F21;
-  --dark2:#30282B;
-  --wine:#6B1E36;
-  --soft:#FFF1F5;
-  --soft2:#F8F6F7;
-  --border:#E7E1E3;
-  --text:#241F21;
-  --muted:#625A5D;
-  --green:#187451;
-  --green-soft:#EDF8F3;
-  --white:#FFFFFF;
+ --red:#FF0E49;
+ --red-dark:#D9003E;
+ --dark:#241F21;
+ --dark2:#30282B;
+ --wine:#6B1E36;
+ --soft:#FFF1F5;
+ --soft2:#F8F6F7;
+ --border:#E7E1E3;
+ --text:#241F21;
+ --muted:#625A5D;
+ --green:#187451;
+ --green-soft:#EDF8F3;
+ --white:#FFFFFF;
 }
 
 *{
-  box-sizing:border-box;
+ box-sizing:border-box;
 }
 
 html{
-  scroll-behavior:smooth;
+ scroll-behavior:smooth;
 }
 
 html,
 body{
-  margin:0;
-  padding:0;
-  background:#FFFFFF;
+ margin:0;
+ padding:0;
+ background:#FFFFFF;
 }
 
 body{
-  padding:20px;
-  color:var(--text);
-  font-family:Arial,Helvetica,sans-serif;
+ padding:20px;
+ color:var(--text);
+ font-family:Arial,Helvetica,sans-serif;
 }
 
 button,
 input{
-  font:inherit;
+ font:inherit;
 }
 
-#aa3-final{
-  width:100%;
-  max-width:1100px;
-  margin:0 auto;
+#-final{
+ width:100%;
+ max-width:1100px;
+ margin:0 auto;
 }
 
 
 /* =========================
-   CABECERA
+ CABECERA
 ========================= */
 
 .hero{
-  position:relative;
-  overflow:hidden;
+ position:relative;
+ overflow:hidden;
 
-  padding:32px;
+ padding:32px;
 
-  border-radius:14px;
+ border-radius:14px;
 
-  color:#FFFFFF;
+ color:#FFFFFF;
 
-  background:
-    linear-gradient(
-      135deg,
-      var(--dark) 0%,
-      var(--dark2) 58%,
-      var(--wine) 140%
-    );
+ background:
+ linear-gradient(
+ 135deg,
+ var(--dark) 0%,
+ var(--dark2) 58%,
+ var(--wine) 140%
+ );
 }
 
 .hero:after{
-  content:"";
+ content:"";
 
-  position:absolute;
+ position:absolute;
 
-  width:290px;
-  height:290px;
+ width:290px;
+ height:290px;
 
-  right:-100px;
-  top:-140px;
+ right:-100px;
+ top:-140px;
 
-  border:2px solid rgba(255,255,255,.11);
+ border:2px solid rgba(255,255,255,.11);
 
-  border-radius:50%;
+ border-radius:50%;
 }
 
 .hero-content{
-  position:relative;
-  z-index:2;
+ position:relative;
+ z-index:2;
 
-  max-width:860px;
+ max-width:860px;
 }
 
 .badge{
-  display:inline-block;
+ display:inline-block;
 
-  margin-bottom:11px;
+ margin-bottom:11px;
 
-  padding:6px 12px;
+ padding:6px 12px;
 
-  border-radius:999px;
+ border-radius:999px;
 
-  background:var(--red);
+ background:var(--red);
 
-  color:#FFFFFF;
+ color:#FFFFFF;
 
-  font-size:12px;
-  font-weight:900;
+ font-size:12px;
+ font-weight:900;
 
-  letter-spacing:.09em;
+ letter-spacing:.09em;
 
-  text-transform:uppercase;
+ text-transform:uppercase;
 }
 
 .hero h1{
-  margin:0;
+ margin:0;
 
-  color:#FFFFFF;
+ color:#FFFFFF;
 
-  font-size:clamp(33px,5vw,48px);
+ font-size:clamp(33px,5vw,48px);
 
-  line-height:1.03;
+ line-height:1.03;
 
-  font-weight:900;
+ font-weight:900;
 }
 
 .hero h1 span{
-  color:var(--red);
+ color:var(--red);
 }
 
 .hero p{
-  max-width:810px;
+ max-width:810px;
 
-  margin:14px 0 0;
+ margin:14px 0 0;
 
-  color:#F4ECEF;
+ color:#F4ECEF;
 
-  font-size:16px;
+ font-size:16px;
 
-  line-height:1.65;
+ line-height:1.65;
 }
 
 
 /* =========================
-   PROPÓSITO
+ PROPÓSITO
 ========================= */
 
 .purpose{
-  margin-top:16px;
+ margin-top:16px;
 
-  padding:19px 20px;
+ padding:19px 20px;
 
-  border:1px solid #F7D4E0;
+ border:1px solid #F7D4E0;
 
-  border-left:6px solid var(--red);
+ border-left:6px solid var(--red);
 
-  border-radius:10px;
+ border-radius:10px;
 
-  background:var(--soft);
+ background:var(--soft);
 }
 
 .purpose small{
-  display:block;
+ display:block;
 
-  margin-bottom:5px;
+ margin-bottom:5px;
 
-  color:var(--red);
+ color:var(--red);
 
-  font-size:11px;
+ font-size:11px;
 
-  font-weight:900;
+ font-weight:900;
 
-  letter-spacing:.08em;
+ letter-spacing:.08em;
 
-  text-transform:uppercase;
+ text-transform:uppercase;
 }
 
 .purpose p{
-  margin:0;
+ margin:0;
 
-  color:#403A3C;
+ color:#403A3C;
 
-  font-size:15px;
+ font-size:15px;
 
-  line-height:1.65;
+ line-height:1.65;
 }
 
 
 /* =========================
-   SECCIONES
+ SECCIONES
 ========================= */
 
 .section{
-  margin-top:27px;
+ margin-top:27px;
 }
 
 .section-label{
-  display:block;
+ display:block;
 
-  margin-bottom:4px;
+ margin-bottom:4px;
 
-  color:var(--red);
+ color:var(--red);
 
-  font-size:12px;
+ font-size:12px;
 
-  font-weight:900;
+ font-weight:900;
 
-  letter-spacing:.08em;
+ letter-spacing:.08em;
 
-  text-transform:uppercase;
+ text-transform:uppercase;
 }
 
 .section h2{
-  margin:0 0 8px;
+ margin:0 0 8px;
 
-  color:var(--dark);
+ color:var(--dark);
 
-  font-size:28px;
+ font-size:28px;
 
-  line-height:1.12;
+ line-height:1.12;
 
-  font-weight:900;
+ font-weight:900;
 }
 
 .section-intro{
-  margin:0 0 16px;
+ margin:0 0 16px;
 
-  color:var(--muted);
+ color:var(--muted);
 
-  font-size:14.5px;
+ font-size:14.5px;
 
-  line-height:1.6;
+ line-height:1.6;
 }
 
 
 /* =========================
-   CONTINUIDAD
+ CONTINUIDAD
 ========================= */
 
 .route{
-  display:grid;
+ display:grid;
 
-  grid-template-columns:repeat(4,1fr);
+ grid-template-columns:repeat(4,1fr);
 
-  gap:9px;
+ gap:9px;
 }
 
 .route-card{
-  padding:17px;
+ padding:17px;
 
-  border:1px solid var(--border);
+ border:1px solid var(--border);
 
-  border-radius:10px;
+ border-radius:10px;
 
-  background:#FFFFFF;
+ background:#FFFFFF;
 }
 
 .route-card.current{
-  border:2px solid var(--red);
+ border:2px solid var(--red);
 
-  background:var(--soft);
+ background:var(--soft);
 }
 
 .route-num{
-  display:flex;
+ display:flex;
 
-  width:33px;
-  height:33px;
+ width:33px;
+ height:33px;
 
-  align-items:center;
-  justify-content:center;
+ align-items:center;
+ justify-content:center;
 
-  margin-bottom:10px;
+ margin-bottom:10px;
 
-  border-radius:50%;
+ border-radius:50%;
 
-  background:var(--dark);
+ background:var(--dark);
 
-  color:#FFFFFF;
+ color:#FFFFFF;
 
-  font-size:12px;
+ font-size:12px;
 
-  font-weight:900;
+ font-weight:900;
 }
 
 .route-card.current .route-num{
-  background:var(--red);
+ background:var(--red);
 }
 
 .route-card small{
-  display:block;
+ display:block;
 
-  margin-bottom:4px;
+ margin-bottom:4px;
 
-  color:var(--red);
+ color:var(--red);
 
-  font-size:11px;
+ font-size:11px;
 
-  font-weight:900;
+ font-weight:900;
 
-  text-transform:uppercase;
+ text-transform:uppercase;
 }
 
 .route-card h3{
-  margin:0 0 7px;
+ margin:0 0 7px;
 
-  font-size:17px;
+ font-size:17px;
 
-  line-height:1.2;
+ line-height:1.2;
 }
 
 .route-card p{
-  margin:0;
+ margin:0;
 
-  color:#514A4D;
+ color:#514A4D;
 
-  font-size:13.5px;
+ font-size:13.5px;
 
-  line-height:1.55;
+ line-height:1.55;
 }
 
 
 /* =========================
-   NO REPETIR
+ NO REPETIR
 ========================= */
 
 .reuse{
-  margin-top:14px;
+ margin-top:14px;
 
-  padding:17px 19px;
+ padding:17px 19px;
 
-  border-radius:10px;
+ border-radius:10px;
 
-  background:var(--dark);
+ background:var(--dark);
 
-  color:#FFFFFF;
+ color:#FFFFFF;
 }
 
 .reuse strong{
-  display:block;
+ display:block;
 
-  margin-bottom:5px;
+ margin-bottom:5px;
 
-  color:#FFB6CA;
+ color:#FFB6CA;
 
-  font-size:16px;
+ font-size:16px;
 }
 
 .reuse p{
-  margin:0;
+ margin:0;
 
-  color:#F3EBEE;
+ color:#F3EBEE;
 
-  font-size:14.5px;
+ font-size:14.5px;
 
-  line-height:1.6;
+ line-height:1.6;
 }
 
 
 /* =========================
-   CONSIGNA
+ CONSIGNA
 ========================= */
 
 .instruction{
-  padding:21px;
+ padding:21px;
 
-  border:1px solid var(--border);
+ border:1px solid var(--border);
 
-  border-radius:11px;
+ border-radius:11px;
 
-  background:#FFFFFF;
+ background:#FFFFFF;
 }
 
 .instruction h3{
-  margin:0 0 9px;
+ margin:0 0 9px;
 
-  color:var(--red);
+ color:var(--red);
 
-  font-size:21px;
+ font-size:21px;
 }
 
 .instruction p{
-  margin:0;
+ margin:0;
 
-  color:#403A3C;
+ color:#403A3C;
 
-  font-size:15px;
+ font-size:15px;
 
-  line-height:1.65;
+ line-height:1.65;
 }
 
 
 /* =========================
-   4 MOMENTOS
+ 4 MOMENTOS
 ========================= */
 
 .moments{
-  display:grid;
+ display:grid;
 
-  grid-template-columns:repeat(4,1fr);
+ grid-template-columns:repeat(4,1fr);
 
-  gap:8px;
+ gap:8px;
 }
 
 .moment-btn{
-  min-height:72px;
+ min-height:72px;
 
-  padding:12px;
+ padding:12px;
 
-  border:1px solid var(--border);
+ border:1px solid var(--border);
 
-  border-radius:9px;
+ border-radius:9px;
 
-  background:#FFFFFF;
+ background:#FFFFFF;
 
-  color:var(--dark);
+ color:var(--dark);
 
-  text-align:left;
+ text-align:left;
 
-  cursor:pointer;
+ cursor:pointer;
 
-  font-weight:800;
+ font-weight:800;
 }
 
 .moment-btn span{
-  display:block;
+ display:block;
 
-  margin-bottom:4px;
+ margin-bottom:4px;
 
-  color:var(--red);
+ color:var(--red);
 
-  font-size:11px;
+ font-size:11px;
 
-  font-weight:900;
+ font-weight:900;
 }
 
 .moment-btn.active{
-  border-color:var(--red);
+ border-color:var(--red);
 
-  background:var(--soft);
+ background:var(--soft);
 
-  box-shadow:
-    inset 0 -4px 0 var(--red);
+ box-shadow:
+ inset 0 -4px 0 var(--red);
 }
 
 .moment-detail{
-  margin-top:10px;
+ margin-top:10px;
 
-  padding:18px;
+ padding:18px;
 
-  border-left:5px solid var(--red);
+ border-left:5px solid var(--red);
 
-  border-radius:9px;
+ border-radius:9px;
 
-  background:var(--soft2);
+ background:var(--soft2);
 }
 
 .moment-detail strong{
-  display:block;
+ display:block;
 
-  margin-bottom:5px;
+ margin-bottom:5px;
 
-  color:var(--red);
+ color:var(--red);
 
-  font-size:17px;
+ font-size:17px;
 }
 
 .moment-detail p{
-  margin:0;
+ margin:0;
 
-  color:#403A3C;
+ color:#403A3C;
 
-  font-size:14.5px;
+ font-size:14.5px;
 
-  line-height:1.6;
+ line-height:1.6;
 }
 
 
 /* =========================
-   VALIDACIÓN
+ VALIDACIÓN
 ========================= */
 
 .validation-grid{
-  display:grid;
+ display:grid;
 
-  grid-template-columns:1fr 1fr;
+ grid-template-columns:1fr 1fr;
 
-  gap:10px;
+ gap:10px;
 }
 
 .validation{
-  display:flex;
+ display:flex;
 
-  gap:11px;
+ gap:11px;
 
-  padding:15px;
+ padding:15px;
 
-  border:1px solid var(--border);
+ border:1px solid var(--border);
 
-  border-radius:9px;
+ border-radius:9px;
 
-  background:#FFFFFF;
+ background:#FFFFFF;
 }
 
 .validation-num{
-  display:flex;
+ display:flex;
 
-  width:31px;
-  height:31px;
+ width:31px;
+ height:31px;
 
-  min-width:31px;
+ min-width:31px;
 
-  align-items:center;
-  justify-content:center;
+ align-items:center;
+ justify-content:center;
 
-  border-radius:50%;
+ border-radius:50%;
 
-  background:var(--red);
+ background:var(--red);
 
-  color:#FFFFFF;
+ color:#FFFFFF;
 
-  font-size:12px;
+ font-size:12px;
 
-  font-weight:900;
+ font-weight:900;
 }
 
 .validation strong{
-  display:block;
+ display:block;
 
-  margin-bottom:3px;
+ margin-bottom:3px;
 
-  color:var(--dark);
+ color:var(--dark);
 
-  font-size:14.5px;
+ font-size:14.5px;
 }
 
 .validation p{
-  margin:0;
+ margin:0;
 
-  color:#514A4D;
+ color:#514A4D;
 
-  font-size:13.5px;
+ font-size:13.5px;
 
-  line-height:1.5;
+ line-height:1.5;
 }
 
 
 /* =========================
-   ENTREGABLE
+ ENTREGABLE
 ========================= */
 
 .deliverables{
-  display:grid;
+ display:grid;
 
-  grid-template-columns:1fr 1fr;
+ grid-template-columns:1fr 1fr;
 
-  gap:12px;
+ gap:12px;
 }
 
 .file{
-  overflow:hidden;
+ overflow:hidden;
 
-  border:1px solid var(--border);
+ border:1px solid var(--border);
 
-  border-radius:11px;
+ border-radius:11px;
 
-  background:#FFFFFF;
+ background:#FFFFFF;
 }
 
 .file-head{
-  padding:16px 18px;
+ padding:16px 18px;
 
-  background:var(--dark);
+ background:var(--dark);
 
-  color:#FFFFFF;
+ color:#FFFFFF;
 }
 
 .file-head small{
-  display:block;
+ display:block;
 
-  margin-bottom:4px;
+ margin-bottom:4px;
 
-  color:#FFB6CA;
+ color:#FFB6CA;
 
-  font-size:11px;
+ font-size:11px;
 
-  font-weight:900;
+ font-weight:900;
 
-  text-transform:uppercase;
+ text-transform:uppercase;
 }
 
 .file-head h3{
-  margin:0;
+ margin:0;
 
-  color:#FFFFFF;
+ color:#FFFFFF;
 
-  font-size:20px;
+ font-size:20px;
 }
 
 .file-body{
-  padding:17px;
+ padding:17px;
 }
 
 .file-body p{
-  margin:0;
+ margin:0;
 
-  color:#4B4446;
+ color:#4B4446;
 
-  font-size:14px;
+ font-size:14px;
 
-  line-height:1.6;
+ line-height:1.6;
 }
 
 .pdf{
-  display:inline-block;
+ display:inline-block;
 
-  margin-top:11px;
+ margin-top:11px;
 
-  padding:5px 9px;
+ padding:5px 9px;
 
-  border-radius:5px;
+ border-radius:5px;
 
-  background:var(--soft);
+ background:var(--soft);
 
-  color:var(--red);
+ color:var(--red);
 
-  font-size:11px;
+ font-size:11px;
 
-  font-weight:900;
+ font-weight:900;
 
-  text-transform:uppercase;
+ text-transform:uppercase;
 }
 
 
 /* =========================
-   COEVALUACIÓN
+ COEVALUACIÓN
 ========================= */
 
 .coeval{
-  overflow:hidden;
+ overflow:hidden;
 
-  border:1px solid var(--border);
+ border:1px solid var(--border);
 
-  border-radius:11px;
+ border-radius:11px;
 }
 
 .coeval-head{
-  padding:19px 20px;
+ padding:19px 20px;
 
-  background:var(--dark);
+ background:var(--dark);
 
-  color:#FFFFFF;
+ color:#FFFFFF;
 }
 
 .coeval-head small{
-  color:#FFB6CA;
+ color:#FFB6CA;
 
-  font-size:11px;
+ font-size:11px;
 
-  font-weight:900;
+ font-weight:900;
 
-  letter-spacing:.08em;
+ letter-spacing:.08em;
 
-  text-transform:uppercase;
+ text-transform:uppercase;
 }
 
 .coeval-head h2{
-  margin:5px 0 0;
+ margin:5px 0 0;
 
-  color:#FFFFFF;
+ color:#FFFFFF;
 
-  font-size:25px;
+ font-size:25px;
 }
 
 .coeval-body{
-  padding:20px;
+ padding:20px;
 }
 
 .roles{
-  display:grid;
+ display:grid;
 
-  grid-template-columns:1fr 1fr;
+ grid-template-columns:1fr 1fr;
 
-  gap:10px;
+ gap:10px;
 
-  margin-bottom:16px;
+ margin-bottom:16px;
 }
 
 .role{
-  padding:15px;
+ padding:15px;
 
-  border:1px solid var(--border);
+ border:1px solid var(--border);
 
-  border-radius:9px;
+ border-radius:9px;
 
-  background:#FFFFFF;
+ background:#FFFFFF;
 }
 
 .role strong{
-  display:block;
+ display:block;
 
-  margin-bottom:4px;
+ margin-bottom:4px;
 
-  color:var(--red);
+ color:var(--red);
 }
 
 .role p{
-  margin:0;
+ margin:0;
 
-  color:#514A4D;
+ color:#514A4D;
 
-  font-size:13.5px;
+ font-size:13.5px;
 
-  line-height:1.5;
+ line-height:1.5;
 }
 
 .coeval-steps{
-  display:grid;
+ display:grid;
 
-  grid-template-columns:repeat(4,1fr);
+ grid-template-columns:repeat(4,1fr);
 
-  gap:8px;
+ gap:8px;
 }
 
 .coeval-btn{
-  min-height:58px;
+ min-height:58px;
 
-  padding:11px;
+ padding:11px;
 
-  border:1px solid var(--border);
+ border:1px solid var(--border);
 
-  border-radius:8px;
+ border-radius:8px;
 
-  background:#FFFFFF;
+ background:#FFFFFF;
 
-  color:var(--dark);
+ color:var(--dark);
 
-  cursor:pointer;
+ cursor:pointer;
 
-  text-align:left;
+ text-align:left;
 
-  font-weight:800;
+ font-weight:800;
 }
 
 .coeval-btn span{
-  display:block;
+ display:block;
 
-  margin-bottom:3px;
+ margin-bottom:3px;
 
-  color:var(--red);
+ color:var(--red);
 
-  font-size:11px;
+ font-size:11px;
 
-  font-weight:900;
+ font-weight:900;
 }
 
 .coeval-btn.active{
-  border-color:var(--red);
+ border-color:var(--red);
 
-  background:var(--soft);
+ background:var(--soft);
 
-  box-shadow:
-    inset 0 -4px 0 var(--red);
+ box-shadow:
+ inset 0 -4px 0 var(--red);
 }
 
 .coeval-detail{
-  margin-top:11px;
+ margin-top:11px;
 
-  padding:17px 18px;
+ padding:17px 18px;
 
-  border-left:5px solid var(--red);
+ border-left:5px solid var(--red);
 
-  border-radius:8px;
+ border-radius:8px;
 
-  background:var(--soft2);
+ background:var(--soft2);
 }
 
 .coeval-detail strong{
-  display:block;
+ display:block;
 
-  margin-bottom:5px;
+ margin-bottom:5px;
 
-  color:var(--red);
+ color:var(--red);
 }
 
 .coeval-detail p{
-  margin:0;
+ margin:0;
 
-  color:#403A3C;
+ color:#403A3C;
 
-  font-size:14.5px;
+ font-size:14.5px;
 
-  line-height:1.6;
+ line-height:1.6;
 }
 
 
 /* =========================
-   REGISTRO DE AJUSTES
+ REGISTRO DE AJUSTES
 ========================= */
 
 .decision-grid{
-  display:grid;
+ display:grid;
 
-  grid-template-columns:repeat(3,1fr);
+ grid-template-columns:repeat(3,1fr);
 
-  gap:10px;
+ gap:10px;
 }
 
 .decision{
-  padding:15px;
+ padding:15px;
 
-  border:1px solid var(--border);
+ border:1px solid var(--border);
 
-  border-radius:9px;
+ border-radius:9px;
 
-  background:#FFFFFF;
+ background:#FFFFFF;
 }
 
 .decision strong{
-  display:block;
+ display:block;
 
-  margin-bottom:5px;
+ margin-bottom:5px;
 
-  color:var(--red);
+ color:var(--red);
 }
 
 .decision p{
-  margin:0;
+ margin:0;
 
-  color:#514A4D;
+ color:#514A4D;
 
-  font-size:13.5px;
+ font-size:13.5px;
 
-  line-height:1.5;
+ line-height:1.5;
 }
 
 
 /* =========================
-   CHECKLIST
+ CHECKLIST
 ========================= */
 
 .checklist{
-  padding:19px;
+ padding:19px;
 
-  border:1px solid var(--border);
+ border:1px solid var(--border);
 
-  border-radius:11px;
+ border-radius:11px;
 
-  background:#F8F6F7;
+ background:#F8F6F7;
 }
 
 .check-item{
-  display:flex;
+ display:flex;
 
-  gap:10px;
+ gap:10px;
 
-  align-items:flex-start;
+ align-items:flex-start;
 
-  margin-bottom:8px;
+ margin-bottom:8px;
 
-  padding:11px 12px;
+ padding:11px 12px;
 
-  border:1px solid var(--border);
+ border:1px solid var(--border);
 
-  border-radius:8px;
+ border-radius:8px;
 
-  background:#FFFFFF;
+ background:#FFFFFF;
 }
 
 .check-item:last-child{
-  margin-bottom:0;
+ margin-bottom:0;
 }
 
 .check-item input{
-  width:18px;
-  height:18px;
+ width:18px;
+ height:18px;
 
-  accent-color:var(--red);
+ accent-color:var(--red);
 }
 
 .check-item label{
-  color:#403A3C;
+ color:#403A3C;
 
-  font-size:14px;
+ font-size:14px;
 
-  line-height:1.45;
+ line-height:1.45;
 }
 
 
 /* =========================
-   CIERRE
+ CIERRE
 ========================= */
 
 .final{
-  margin-top:20px;
+ margin-top:20px;
 
-  padding:19px 20px;
+ padding:19px 20px;
 
-  border:1px solid #F7D4E0;
+ border:1px solid #F7D4E0;
 
-  border-left:6px solid var(--red);
+ border-left:6px solid var(--red);
 
-  border-radius:9px;
+ border-radius:9px;
 
-  background:var(--soft);
+ background:var(--soft);
 }
 
 .final strong{
-  display:block;
+ display:block;
 
-  margin-bottom:5px;
+ margin-bottom:5px;
 
-  color:var(--red);
+ color:var(--red);
 
-  font-size:16px;
+ font-size:16px;
 }
 
 .final p{
-  margin:0;
+ margin:0;
 
-  color:#403A3C;
+ color:#403A3C;
 
-  font-size:14.5px;
+ font-size:14.5px;
 
-  line-height:1.6;
+ line-height:1.6;
 }
 
 
 /* =========================
-   RESPONSIVE
+ RESPONSIVE
 ========================= */
 
 @media(max-width:850px){
 
-  .route,
-  .moments,
-  .coeval-steps{
-    grid-template-columns:1fr 1fr;
-  }
+ .route,
+ .moments,
+ .coeval-steps{
+ grid-template-columns:1fr 1fr;
+ }
 
-  .validation-grid,
-  .deliverables{
-    grid-template-columns:1fr;
-  }
+ .validation-grid,
+ .deliverables{
+ grid-template-columns:1fr;
+ }
 
 }
 
 @media(max-width:600px){
 
-  body{
-    padding:12px;
-  }
+ body{
+ padding:12px;
+ }
 
-  .hero{
-    padding:24px 20px;
-  }
+ .hero{
+ padding:24px 20px;
+ }
 
-  .route,
-  .moments,
-  .roles,
-  .coeval-steps,
-  .decision-grid{
-    grid-template-columns:1fr;
-  }
+ .route,
+ .moments,
+ .roles,
+ .coeval-steps,
+ .decision-grid{
+ grid-template-columns:1fr;
+ }
 
 }
 </style>
@@ -980,32 +980,32 @@ input{
 
 <body>
 
-<main id="aa3-final">
+<main id="instrumento-final">
 
 
 <!-- CABECERA -->
 
 <section class="hero">
 
-  <div class="hero-content">
+ <div class="hero-content">
 
-    <div class="badge">
-      AA3 · TERCER AVANCE
-    </div>
+ <div class="badge">
+ TERCER AVANCE
+ </div>
 
-    <h1>
-      Construye y valida tu
-      <span>instrumento de evaluación</span>
-    </h1>
+ <h1>
+ Construye y valida tu
+ <span>instrumento de evaluación</span>
+ </h1>
 
-    <p>
-      Recupera la rúbrica ajustada en el Tema 06,
-      valida su coherencia mediante coevaluación
-      y genera la versión final que utilizarás
-      para valorar la evidencia auténtica trabajada en AA2.
-    </p>
+ <p>
+ Recupera la rúbrica ajustada en el Tema 06,
+ valida su coherencia mediante coevaluación
+ y genera la versión final que utilizarás
+ para valorar la evidencia auténtica trabajada previamente.
+ </p>
 
-  </div>
+ </div>
 
 </section>
 
@@ -1014,17 +1014,17 @@ input{
 
 <section class="purpose">
 
-  <small>
-    Propósito
-  </small>
+ <small>
+ Propósito
+ </small>
 
-  <p>
-    Validar y cerrar, mediante coevaluación,
-    el instrumento desarrollado durante los Temas 05 y 06,
-    asegurando coherencia con la evidencia auténtica,
-    claridad de criterios y niveles, retroalimentación formativa
-    y uso responsable y transparente de IA.
-  </p>
+ <p>
+ Validar y cerrar, mediante coevaluación,
+ el instrumento desarrollado durante los Temas 05 y 06,
+ asegurando coherencia con la evidencia auténtica,
+ claridad de criterios y niveles, retroalimentación formativa
+ y uso responsable y transparente de IA.
+ </p>
 
 </section>
 
@@ -1033,104 +1033,104 @@ input{
 
 <section class="section">
 
-  <span class="section-label">
-    Un solo proceso
-  </span>
+ <span class="section-label">
+ Un solo proceso
+ </span>
 
-  <h2>
-    Así llegaste hasta el AA3
-  </h2>
+ <h2>
+ Así llegaste hasta aquí
+ </h2>
 
-  <p class="section-intro">
-    Cada etapa recupera y mejora la anterior.
-    En AA3 no vuelves a construir el instrumento desde cero.
-  </p>
-
-
-  <div class="route">
+ <p class="section-intro">
+ Cada etapa recupera y mejora la anterior.
+ No vuelves a construir el instrumento desde cero.
+ </p>
 
 
-    <article class="route-card">
-
-      <div class="route-num">01</div>
-
-      <small>AA1</small>
-
-      <h3>Diagnosticaste</h3>
-
-      <p>
-        Identificaste las brechas de una evidencia
-        real de tu curso.
-      </p>
-
-    </article>
+ <div class="route">
 
 
-    <article class="route-card">
+ <article class="route-card">
 
-      <div class="route-num">02</div>
+ <div class="route-num">01</div>
 
-      <small>AA2</small>
+ <small>Etapa previa</small>
 
-      <h3>Rediseñaste</h3>
+ <h3>Diagnosticaste</h3>
 
-      <p>
-        Transformaste esa evidencia en una
-        evidencia auténtica.
-      </p>
+ <p>
+ Identificaste las brechas de una evidencia
+ real de tu curso.
+ </p>
 
-    </article>
-
-
-    <article class="route-card">
-
-      <div class="route-num">03</div>
-
-      <small>Tema 05 y 06</small>
-
-      <h3>Construiste y mejoraste</h3>
-
-      <p>
-        Creaste tu instrumento y lo ajustaste
-        con criterios, niveles, feedback y uso responsable de IA.
-      </p>
-
-    </article>
+ </article>
 
 
-    <article class="route-card current">
+ <article class="route-card">
 
-      <div class="route-num">04</div>
+ <div class="route-num">02</div>
 
-      <small>AA3</small>
+ <small>Etapa previa</small>
 
-      <h3>Validas y cierras</h3>
+ <h3>Rediseñaste</h3>
 
-      <p>
-        Recibes feedback de un compañero,
-        decides qué ajustes aplicar y generas la versión final.
-      </p>
+ <p>
+ Transformaste esa evidencia en una
+ evidencia auténtica.
+ </p>
 
-    </article>
-
-
-  </div>
+ </article>
 
 
-  <div class="reuse">
+ <article class="route-card">
 
-    <strong>
-      Importante: no vuelvas a construir la rúbrica
-    </strong>
+ <div class="route-num">03</div>
 
-    <p>
-      El punto de partida del AA3 es la
-      <strong>versión ajustada que terminaste en el Tema 06.</strong>
-      Ahora el trabajo consiste en demostrar su trazabilidad,
-      validarla con otro docente y aplicar los ajustes finales.
-    </p>
+ <small>Tema 05 y 06</small>
 
-  </div>
+ <h3>Construiste y mejoraste</h3>
+
+ <p>
+ Creaste tu instrumento y lo ajustaste
+ con criterios, niveles, feedback y uso responsable de IA.
+ </p>
+
+ </article>
+
+
+ <article class="route-card current">
+
+ <div class="route-num">04</div>
+
+ <small>Etapa previa</small>
+
+ <h3>Validas y cierras</h3>
+
+ <p>
+ Recibes feedback de un compañero,
+ decides qué ajustes aplicar y generas la versión final.
+ </p>
+
+ </article>
+
+
+ </div>
+
+
+ <div class="reuse">
+
+ <strong>
+ Importante: no vuelvas a construir la rúbrica
+ </strong>
+
+ <p>
+ El punto de partida es la
+ <strong>versión ajustada que terminaste en el Tema 06.</strong>
+ Ahora el trabajo consiste en demostrar su trazabilidad,
+ validarla con otro docente y aplicar los ajustes finales.
+ </p>
+
+ </div>
 
 </section>
 
@@ -1139,35 +1139,35 @@ input{
 
 <section class="section">
 
-  <span class="section-label">
-    Consigna
-  </span>
+ <span class="section-label">
+ Consigna
+ </span>
 
-  <h2>
-    ¿Qué debes hacer?
-  </h2>
+ <h2>
+ ¿Qué debes hacer?
+ </h2>
 
 
-  <div class="instruction">
+ <div class="instruction">
 
-    <h3>
-      Recupera tu instrumento del Tema 06
-    </h3>
+ <h3>
+ Recupera tu instrumento del Tema 06
+ </h3>
 
-    <p>
-      Trabaja con la misma evidencia auténtica que desarrollaste
-      en AA2 y con la rúbrica o instrumento que ajustaste
-      en el Tema 06.
-      <br><br>
-      Primero verifica que todo siga alineado.
-      Luego comparte tu trabajo con un compañero para recibir
-      una coevaluación basada en la rúbrica oficial.
-      Finalmente, analiza las recomendaciones recibidas,
-      decide cuáles conservar, modificar o descartar
-      y genera tu versión final.
-    </p>
+ <p>
+ Trabaja con la misma evidencia auténtica que desarrollaste
+ y con la rúbrica o instrumento que ajustaste
+ en el Tema 06.
+ <br><br>
+ Primero verifica que todo siga alineado.
+ Luego comparte tu trabajo con un compañero para recibir
+ una coevaluación basada en la rúbrica oficial.
+ Finalmente, analiza las recomendaciones recibidas,
+ decide cuáles conservar, modificar o descartar
+ y genera tu versión final.
+ </p>
 
-  </div>
+ </div>
 
 </section>
 
@@ -1176,87 +1176,87 @@ input{
 
 <section class="section">
 
-  <span class="section-label">
-    Desarrollo
-  </span>
+ <span class="section-label">
+ Desarrollo
+ </span>
 
-  <h2>
-    Completa el AA3 en 4 momentos
-  </h2>
+ <h2>
+ Completa el en 4 momentos
+ </h2>
 
-  <p class="section-intro">
-    Selecciona cada momento para revisar la tarea correspondiente.
-  </p>
-
-
-  <div class="moments">
+ <p class="section-intro">
+ Selecciona cada momento para revisar la tarea correspondiente.
+ </p>
 
 
-    <button
-      type="button"
-      class="moment-btn active"
-      data-moment="0">
-
-      <span>01</span>
-
-      Recupera
-
-    </button>
+ <div class="moments">
 
 
-    <button
-      type="button"
-      class="moment-btn"
-      data-moment="1">
+ <button
+ type="button"
+ class="moment-btn active"
+ data-moment="0">
 
-      <span>02</span>
+ <span>01</span>
 
-      Valida
+ Recupera
 
-    </button>
-
-
-    <button
-      type="button"
-      class="moment-btn"
-      data-moment="2">
-
-      <span>03</span>
-
-      Coevalúa
-
-    </button>
+ </button>
 
 
-    <button
-      type="button"
-      class="moment-btn"
-      data-moment="3">
+ <button
+ type="button"
+ class="moment-btn"
+ data-moment="1">
 
-      <span>04</span>
+ <span>02</span>
 
-      Ajusta y entrega
+ Valida
 
-    </button>
-
-
-  </div>
+ </button>
 
 
-  <div class="moment-detail">
+ <button
+ type="button"
+ class="moment-btn"
+ data-moment="2">
 
-    <strong id="momentTitle">
-      1. Recupera tu versión del Tema 06
-    </strong>
+ <span>03</span>
 
-    <p id="momentText">
-      Reúne la evidencia auténtica del AA2 y la versión ajustada
-      del instrumento que terminaste en el Tema 06.
-      Registra curso, resultado de aprendizaje, competencia
-      y evidencia para demostrar la continuidad del proceso.
-    </p>
+ Coevalúa
 
-  </div>
+ </button>
+
+
+ <button
+ type="button"
+ class="moment-btn"
+ data-moment="3">
+
+ <span>04</span>
+
+ Ajusta y entrega
+
+ </button>
+
+
+ </div>
+
+
+ <div class="moment-detail">
+
+ <strong id="momentTitle">
+ 1. Recupera tu versión del Tema 06
+ </strong>
+
+ <p id="momentText">
+ Reúne la evidencia auténtica y la versión ajustada
+ del instrumento que terminaste en el Tema 06.
+ Registra curso, resultado de aprendizaje, competencia
+ y evidencia para demostrar la continuidad del proceso.
+ </p>
+
+ </div>
 
 </section>
 
@@ -1265,156 +1265,156 @@ input{
 
 <section class="section">
 
-  <span class="section-label">
-    Validación antes de coevaluar
-  </span>
+ <span class="section-label">
+ Validación antes de coevaluar
+ </span>
 
-  <h2>
-    Comprueba la coherencia final
-  </h2>
+ <h2>
+ Comprueba la coherencia final
+ </h2>
 
-  <p class="section-intro">
-    No necesitas volver a redactar estos componentes.
-    Solo verifica que estén correctamente integrados.
-  </p>
-
-
-  <div class="validation-grid">
+ <p class="section-intro">
+ No necesitas volver a redactar estos componentes.
+ Solo verifica que estén correctamente integrados.
+ </p>
 
 
-    <article class="validation">
-
-      <div class="validation-num">
-        1
-      </div>
-
-      <div>
-
-        <strong>
-          Resultado ↔ evidencia
-        </strong>
-
-        <p>
-          La evidencia auténtica permite demostrar
-          el resultado de aprendizaje.
-        </p>
-
-      </div>
-
-    </article>
+ <div class="validation-grid">
 
 
-    <article class="validation">
+ <article class="validation">
 
-      <div class="validation-num">
-        2
-      </div>
+ <div class="validation-num">
+ 1
+ </div>
 
-      <div>
+ <div>
 
-        <strong>
-          Evidencia ↔ instrumento
-        </strong>
+ <strong>
+ Resultado ↔ evidencia
+ </strong>
 
-        <p>
-          El instrumento seleccionado permite valorar
-          adecuadamente el producto o desempeño.
-        </p>
+ <p>
+ La evidencia auténtica permite demostrar
+ el resultado de aprendizaje.
+ </p>
 
-      </div>
+ </div>
 
-    </article>
-
-
-    <article class="validation">
-
-      <div class="validation-num">
-        3
-      </div>
-
-      <div>
-
-        <strong>
-          Criterios observables
-        </strong>
-
-        <p>
-          Los criterios describen aspectos concretos
-          del desempeño y no se superponen.
-        </p>
-
-      </div>
-
-    </article>
+ </article>
 
 
-    <article class="validation">
+ <article class="validation">
 
-      <div class="validation-num">
-        4
-      </div>
+ <div class="validation-num">
+ 2
+ </div>
 
-      <div>
+ <div>
 
-        <strong>
-          Niveles comparables
-        </strong>
+ <strong>
+ Evidencia ↔ instrumento
+ </strong>
 
-        <p>
-          Logro destacado, Logrado y No logrado
-          describen diferencias reales del mismo criterio.
-        </p>
+ <p>
+ El instrumento seleccionado permite valorar
+ adecuadamente el producto o desempeño.
+ </p>
 
-      </div>
+ </div>
 
-    </article>
-
-
-    <article class="validation">
-
-      <div class="validation-num">
-        5
-      </div>
-
-      <div>
-
-        <strong>
-          Retroalimentación
-        </strong>
-
-        <p>
-          El instrumento permite reconocer logros
-          y orientar acciones concretas de mejora.
-        </p>
-
-      </div>
-
-    </article>
+ </article>
 
 
-    <article class="validation">
+ <article class="validation">
 
-      <div class="validation-num">
-        6
-      </div>
+ <div class="validation-num">
+ 3
+ </div>
 
-      <div>
+ <div>
 
-        <strong>
-          Uso responsable de IA
-        </strong>
+ <strong>
+ Criterios observables
+ </strong>
 
-        <p>
-          El criterio institucional está incorporado
-          y adaptado al tipo de evidencia.
-        </p>
+ <p>
+ Los criterios describen aspectos concretos
+ del desempeño y no se superponen.
+ </p>
 
-      </div>
+ </div>
 
-    </article>
+ </article>
 
 
-  </div>
+ <article class="validation">
+
+ <div class="validation-num">
+ 4
+ </div>
+
+ <div>
+
+ <strong>
+ Niveles comparables
+ </strong>
+
+ <p>
+ Logro destacado, Logrado y No logrado
+ describen diferencias reales del mismo criterio.
+ </p>
+
+ </div>
+
+ </article>
+
+
+ <article class="validation">
+
+ <div class="validation-num">
+ 5
+ </div>
+
+ <div>
+
+ <strong>
+ Retroalimentación
+ </strong>
+
+ <p>
+ El instrumento permite reconocer logros
+ y orientar acciones concretas de mejora.
+ </p>
+
+ </div>
+
+ </article>
+
+
+ <article class="validation">
+
+ <div class="validation-num">
+ 6
+ </div>
+
+ <div>
+
+ <strong>
+ Uso responsable de IA
+ </strong>
+
+ <p>
+ El criterio institucional está incorporado
+ y adaptado al tipo de evidencia.
+ </p>
+
+ </div>
+
+ </article>
+
+
+ </div>
 
 </section>
 
@@ -1423,93 +1423,93 @@ input{
 
 <section class="section">
 
-  <span class="section-label">
-    Entregable
-  </span>
+ <span class="section-label">
+ Entregable
+ </span>
 
-  <h2>
-    Presenta 2 archivos PDF
-  </h2>
+ <h2>
+ Presenta 2 archivos PDF
+ </h2>
 
-  <p class="section-intro">
-    Ambos archivos deben corresponder al mismo curso,
-    resultado de aprendizaje y evidencia trabajados
-    desde AA1 y AA2.
-  </p>
-
-
-  <div class="deliverables">
+ <p class="section-intro">
+ Ambos archivos deben corresponder al mismo curso,
+ resultado de aprendizaje y evidencia trabajados
+ en las etapas anteriores.
+ </p>
 
 
-    <article class="file">
-
-      <div class="file-head">
-
-        <small>
-          Archivo 01
-        </small>
-
-        <h3>
-          Instrumento final
-        </h3>
-
-      </div>
+ <div class="deliverables">
 
 
-      <div class="file-body">
+ <article class="file">
 
-        <p>
-          Presenta la versión final de tu rúbrica,
-          lista de cotejo, guía de observación
-          u otro instrumento.
-          Debe incorporar los ajustes realizados
-          en el Tema 06 y después de la coevaluación.
-        </p>
+ <div class="file-head">
 
-        <span class="pdf">
-          PDF
-        </span>
+ <small>
+ Archivo 01
+ </small>
 
-      </div>
+ <h3>
+ Instrumento final
+ </h3>
 
-    </article>
+ </div>
 
 
-    <article class="file">
+ <div class="file-body">
 
-      <div class="file-head">
+ <p>
+ Presenta la versión final de tu rúbrica,
+ lista de cotejo, guía de observación
+ u otro instrumento.
+ Debe incorporar los ajustes realizados
+ en el Tema 06 y después de la coevaluación.
+ </p>
 
-        <small>
-          Archivo 02
-        </small>
+ <span class="pdf">
+ PDF
+ </span>
 
-        <h3>
-          Ficha de validación y mejora
-        </h3>
+ </div>
 
-      </div>
-
-
-      <div class="file-body">
-
-        <p>
-          Registra la trazabilidad AA2 → instrumento,
-          la justificación de la elección,
-          el feedback recibido en la coevaluación
-          y las decisiones tomadas para cerrar
-          la versión final.
-        </p>
-
-        <span class="pdf">
-          PDF
-        </span>
-
-      </div>
-
-    </article>
+ </article>
 
 
-  </div>
+ <article class="file">
+
+ <div class="file-head">
+
+ <small>
+ Archivo 02
+ </small>
+
+ <h3>
+ Ficha de validación y mejora
+ </h3>
+
+ </div>
+
+
+ <div class="file-body">
+
+ <p>
+ Registra la trazabilidad entre la evidencia y el instrumento,
+ la justificación de la elección,
+ el feedback recibido en la coevaluación
+ y las decisiones tomadas para cerrar
+ la versión final.
+ </p>
+
+ <span class="pdf">
+ PDF
+ </span>
+
+ </div>
+
+ </article>
+
+
+ </div>
 
 </section>
 
@@ -1518,134 +1518,134 @@ input{
 
 <section class="section">
 
-  <div class="coeval">
+ <div class="coeval">
 
 
-    <div class="coeval-head">
+ <div class="coeval-head">
 
-      <small>
-        Coevaluación
-      </small>
+ <small>
+ Coevaluación
+ </small>
 
-      <h2>
-        Dos roles, un mismo propósito: mejorar
-      </h2>
+ <h2>
+ Dos roles, un mismo propósito: mejorar
+ </h2>
 
-    </div>
-
-
-    <div class="coeval-body">
+ </div>
 
 
-      <div class="roles">
+ <div class="coeval-body">
 
 
-        <article class="role">
-
-          <strong>
-            Como autor
-          </strong>
-
-          <p>
-            Presentas tu instrumento y utilizas
-            el feedback recibido para decidir
-            los ajustes finales.
-          </p>
-
-        </article>
+ <div class="roles">
 
 
-        <article class="role">
+ <article class="role">
 
-          <strong>
-            Como coevaluador
-          </strong>
+ <strong>
+ Como autor
+ </strong>
 
-          <p>
-            Revisas el AA3 de un compañero
-            utilizando la rúbrica oficial
-            y sustentas tu valoración con evidencia.
-          </p>
+ <p>
+ Presentas tu instrumento y utilizas
+ el feedback recibido para decidir
+ los ajustes finales.
+ </p>
 
-        </article>
-
-
-      </div>
+ </article>
 
 
-      <div class="coeval-steps">
+ <article class="role">
+
+ <strong>
+ Como coevaluador
+ </strong>
+
+ <p>
+ Revisas el trabajo de un compañero
+ utilizando la rúbrica oficial
+ y sustentas tu valoración con evidencia.
+ </p>
+
+ </article>
 
 
-        <button
-          type="button"
-          class="coeval-btn active"
-          data-coeval="0">
-
-          <span>01</span>
-
-          Verifica
-
-        </button>
+ </div>
 
 
-        <button
-          type="button"
-          class="coeval-btn"
-          data-coeval="1">
-
-          <span>02</span>
-
-          Valora
-
-        </button>
+ <div class="coeval-steps">
 
 
-        <button
-          type="button"
-          class="coeval-btn"
-          data-coeval="2">
+ <button
+ type="button"
+ class="coeval-btn active"
+ data-coeval="0">
 
-          <span>03</span>
+ <span>01</span>
 
-          Recomienda
+ Verifica
 
-        </button>
-
-
-        <button
-          type="button"
-          class="coeval-btn"
-          data-coeval="3">
-
-          <span>04</span>
-
-          Decide
-
-        </button>
+ </button>
 
 
-      </div>
+ <button
+ type="button"
+ class="coeval-btn"
+ data-coeval="1">
+
+ <span>02</span>
+
+ Valora
+
+ </button>
 
 
-      <div class="coeval-detail">
+ <button
+ type="button"
+ class="coeval-btn"
+ data-coeval="2">
 
-        <strong id="coevalTitle">
-          Verifica la continuidad
-        </strong>
+ <span>03</span>
 
-        <p id="coevalText">
-          Confirma que el instrumento corresponde
-          al mismo curso, resultado y evidencia auténtica
-          trabajados en los avances anteriores.
-          Lee los dos archivos completos antes de valorar.
-        </p>
+ Recomienda
 
-      </div>
+ </button>
 
 
-    </div>
+ <button
+ type="button"
+ class="coeval-btn"
+ data-coeval="3">
 
-  </div>
+ <span>04</span>
+
+ Decide
+
+ </button>
+
+
+ </div>
+
+
+ <div class="coeval-detail">
+
+ <strong id="coevalTitle">
+ Verifica la continuidad
+ </strong>
+
+ <p id="coevalText">
+ Confirma que el instrumento corresponde
+ al mismo curso, resultado y evidencia auténtica
+ trabajados en las etapas anteriores.
+ Lee los dos archivos completos antes de valorar.
+ </p>
+
+ </div>
+
+
+ </div>
+
+ </div>
 
 </section>
 
@@ -1654,63 +1654,63 @@ input{
 
 <section class="section">
 
-  <span class="section-label">
-    Después de recibir feedback
-  </span>
+ <span class="section-label">
+ Después de recibir feedback
+ </span>
 
-  <h2>
-    Tú decides qué hacer con cada recomendación
-  </h2>
-
-
-  <div class="decision-grid">
+ <h2>
+ Tú decides qué hacer con cada recomendación
+ </h2>
 
 
-    <article class="decision">
-
-      <strong>
-        Conservar
-      </strong>
-
-      <p>
-        Mantén la recomendación cuando mejora
-        la claridad o coherencia del instrumento.
-      </p>
-
-    </article>
+ <div class="decision-grid">
 
 
-    <article class="decision">
+ <article class="decision">
 
-      <strong>
-        Modificar
-      </strong>
+ <strong>
+ Conservar
+ </strong>
 
-      <p>
-        Adáptala cuando la recomendación es útil,
-        pero necesita ajustarse a tu evidencia
-        o contexto.
-      </p>
+ <p>
+ Mantén la recomendación cuando mejora
+ la claridad o coherencia del instrumento.
+ </p>
 
-    </article>
-
-
-    <article class="decision">
-
-      <strong>
-        Descartar
-      </strong>
-
-      <p>
-        No la incorpores cuando altera el propósito,
-        introduce una exigencia nueva o no corresponde
-        al aprendizaje evaluado.
-      </p>
-
-    </article>
+ </article>
 
 
-  </div>
+ <article class="decision">
+
+ <strong>
+ Modificar
+ </strong>
+
+ <p>
+ Adáptala cuando la recomendación es útil,
+ pero necesita ajustarse a tu evidencia
+ o contexto.
+ </p>
+
+ </article>
+
+
+ <article class="decision">
+
+ <strong>
+ Descartar
+ </strong>
+
+ <p>
+ No la incorpores cuando altera el propósito,
+ introduce una exigencia nueva o no corresponde
+ al aprendizaje evaluado.
+ </p>
+
+ </article>
+
+
+ </div>
 
 </section>
 
@@ -1719,115 +1719,115 @@ input{
 
 <section class="section">
 
-  <span class="section-label">
-    Antes de entregar
-  </span>
+ <span class="section-label">
+ Antes de entregar
+ </span>
 
-  <h2>
-    Revisión final del AA3
-  </h2>
-
-
-  <div class="checklist">
+ <h2>
+ Revisión final
+ </h2>
 
 
-    <div class="check-item">
-
-      <input
-        type="checkbox"
-        id="check1">
-
-      <label for="check1">
-        Utilicé la misma evidencia auténtica trabajada en AA2.
-      </label>
-
-    </div>
+ <div class="checklist">
 
 
-    <div class="check-item">
+ <div class="check-item">
 
-      <input
-        type="checkbox"
-        id="check2">
+ <input
+ type="checkbox"
+ id="check1">
 
-      <label for="check2">
-        Partí de la versión del instrumento ajustada en el Tema 06.
-      </label>
+ <label for="check1">
+ Utilicé la misma evidencia auténtica trabajada previamente.
+ </label>
 
-    </div>
-
-
-    <div class="check-item">
-
-      <input
-        type="checkbox"
-        id="check3">
-
-      <label for="check3">
-        Verifiqué la coherencia entre resultado,
-        evidencia, criterios, niveles e instrumento.
-      </label>
-
-    </div>
+ </div>
 
 
-    <div class="check-item">
+ <div class="check-item">
 
-      <input
-        type="checkbox"
-        id="check4">
+ <input
+ type="checkbox"
+ id="check2">
 
-      <label for="check4">
-        Mi instrumento incorpora retroalimentación formativa
-        y el criterio de uso responsable y transparente de IA.
-      </label>
+ <label for="check2">
+ Partí de la versión del instrumento ajustada en el Tema 06.
+ </label>
 
-    </div>
-
-
-    <div class="check-item">
-
-      <input
-        type="checkbox"
-        id="check5">
-
-      <label for="check5">
-        Realicé la coevaluación de un compañero utilizando
-        la rúbrica oficial criterio por criterio.
-      </label>
-
-    </div>
+ </div>
 
 
-    <div class="check-item">
+ <div class="check-item">
 
-      <input
-        type="checkbox"
-        id="check6">
+ <input
+ type="checkbox"
+ id="check3">
 
-      <label for="check6">
-        Revisé el feedback recibido y registré
-        qué recomendaciones conservé, modifiqué o descarté.
-      </label>
+ <label for="check3">
+ Verifiqué la coherencia entre resultado,
+ evidencia, criterios, niveles e instrumento.
+ </label>
 
-    </div>
-
-
-    <div class="check-item">
-
-      <input
-        type="checkbox"
-        id="check7">
-
-      <label for="check7">
-        Preparé el instrumento final y la ficha de validación
-        y mejora en formato PDF.
-      </label>
-
-    </div>
+ </div>
 
 
-  </div>
+ <div class="check-item">
+
+ <input
+ type="checkbox"
+ id="check4">
+
+ <label for="check4">
+ Mi instrumento incorpora retroalimentación formativa
+ y el criterio de uso responsable y transparente de IA.
+ </label>
+
+ </div>
+
+
+ <div class="check-item">
+
+ <input
+ type="checkbox"
+ id="check5">
+
+ <label for="check5">
+ Realicé la coevaluación de un compañero utilizando
+ la rúbrica oficial criterio por criterio.
+ </label>
+
+ </div>
+
+
+ <div class="check-item">
+
+ <input
+ type="checkbox"
+ id="check6">
+
+ <label for="check6">
+ Revisé el feedback recibido y registré
+ qué recomendaciones conservé, modifiqué o descarté.
+ </label>
+
+ </div>
+
+
+ <div class="check-item">
+
+ <input
+ type="checkbox"
+ id="check7">
+
+ <label for="check7">
+ Preparé el instrumento final y la ficha de validación
+ y mejora en formato PDF.
+ </label>
+
+ </div>
+
+
+ </div>
 
 </section>
 
@@ -1836,17 +1836,17 @@ input{
 
 <section class="final">
 
-  <strong>
-    Producto final del AA3
-  </strong>
+ <strong>
+ Producto final
+ </strong>
 
-  <p>
-    Una <strong>versión final y validada del instrumento de evaluación</strong>,
-    acompañada de una ficha que demuestre su trazabilidad,
-    la coevaluación recibida y las decisiones de mejora aplicadas.
-    Así, el AA3 cierra el proceso iniciado en AA1 y AA2
-    sin generar un producto aislado.
-  </p>
+ <p>
+ Una <strong>versión final y validada del instrumento de evaluación</strong>,
+ acompañada de una ficha que demuestre su trazabilidad,
+ la coevaluación recibida y las decisiones de mejora aplicadas.
+ Así, esta actividad cierra el proceso iniciado y 
+ sin generar un producto aislado.
+ </p>
 
 </section>
 
@@ -1857,212 +1857,212 @@ input{
 <script>
 (function(){
 
-  const root =
-    document.getElementById("aa3-final");
+ const root =
+ document.getElementById("instrumento-final");
 
 
-  /* =========================
-     4 MOMENTOS
-  ========================= */
+ /* =========================
+ 4 MOMENTOS
+ ========================= */
 
-  const MOMENTS = [
+ const MOMENTS = [
 
-    {
-      title:
-        "1. Recupera tu versión del Tema 06",
+ {
+ title:
+ "1. Recupera tu versión del Tema 06",
 
-      text:
-        "Reúne la evidencia auténtica del AA2 y la versión ajustada del instrumento que terminaste en el Tema 06. Registra curso, resultado de aprendizaje, competencia y evidencia para demostrar la continuidad del proceso."
-    },
+ text:
+ "Reúne la evidencia auténtica y la versión ajustada del instrumento que terminaste en el Tema 06. Registra curso, resultado de aprendizaje, competencia y evidencia para demostrar la continuidad del proceso."
+ },
 
-    {
-      title:
-        "2. Valida la coherencia",
+ {
+ title:
+ "2. Valida la coherencia",
 
-      text:
-        "Realiza una revisión final de la relación entre resultado, evidencia, instrumento, criterios, niveles, retroalimentación y uso responsable de IA. Corrige únicamente aquello que todavía afecte la claridad o el alineamiento."
-    },
+ text:
+ "Realiza una revisión final de la relación entre resultado, evidencia, instrumento, criterios, niveles, retroalimentación y uso responsable de IA. Corrige únicamente aquello que todavía afecte la claridad o el alineamiento."
+ },
 
-    {
-      title:
-        "3. Participa en la coevaluación",
+ {
+ title:
+ "3. Participa en la coevaluación",
 
-      text:
-        "Comparte los dos archivos con un compañero y revisa también su AA3. Utiliza la rúbrica oficial criterio por criterio, sustenta tu valoración con elementos observados y formula por lo menos una recomendación concreta de mejora."
-    },
+ text:
+ "Comparte los dos archivos con un compañero y revisa también su . Utiliza la rúbrica oficial criterio por criterio, sustenta tu valoración con elementos observados y formula por lo menos una recomendación concreta de mejora."
+ },
 
-    {
-      title:
-        "4. Ajusta y entrega",
+ {
+ title:
+ "4. Ajusta y entrega",
 
-      text:
-        "Revisa el feedback recibido. Decide qué recomendaciones conservar, modificar o descartar y registra brevemente tus decisiones. Luego genera la versión final del instrumento y la ficha de validación y mejora."
-    }
+ text:
+ "Revisa el feedback recibido. Decide qué recomendaciones conservar, modificar o descartar y registra brevemente tus decisiones. Luego genera la versión final del instrumento y la ficha de validación y mejora."
+ }
 
-  ];
+ ];
 
 
-  const momentButtons =
-    root.querySelectorAll(
-      ".moment-btn"
-    );
+ const momentButtons =
+ root.querySelectorAll(
+ ".moment-btn"
+ );
 
-  const momentTitle =
-    root.querySelector(
-      "#momentTitle"
-    );
+ const momentTitle =
+ root.querySelector(
+ "#momentTitle"
+ );
 
-  const momentText =
-    root.querySelector(
-      "#momentText"
-    );
+ const momentText =
+ root.querySelector(
+ "#momentText"
+ );
 
 
-  momentButtons.forEach(
-    function(button){
+ momentButtons.forEach(
+ function(button){
 
-      button.addEventListener(
-        "click",
-        function(){
+ button.addEventListener(
+ "click",
+ function(){
 
-          momentButtons.forEach(
-            function(item){
+ momentButtons.forEach(
+ function(item){
 
-              item.classList.remove(
-                "active"
-              );
+ item.classList.remove(
+ "active"
+ );
 
-            }
-          );
+ }
+ );
 
 
-          button.classList.add(
-            "active"
-          );
+ button.classList.add(
+ "active"
+ );
 
 
-          const data =
-            MOMENTS[
-              Number(
-                button.dataset.moment
-              )
-            ];
+ const data =
+ MOMENTS[
+ Number(
+ button.dataset.moment
+ )
+ ];
 
 
-          momentTitle.textContent =
-            data.title;
+ momentTitle.textContent =
+ data.title;
 
 
-          momentText.textContent =
-            data.text;
+ momentText.textContent =
+ data.text;
 
-        }
-      );
+ }
+ );
 
-    }
-  );
+ }
+ );
 
 
-  /* =========================
-     COEVALUACIÓN
-  ========================= */
+ /* =========================
+ COEVALUACIÓN
+ ========================= */
 
-  const COEVAL = [
+ const COEVAL = [
 
-    {
-      title:
-        "Verifica la continuidad",
+ {
+ title:
+ "Verifica la continuidad",
 
-      text:
-        "Confirma que el instrumento corresponde al mismo curso, resultado y evidencia auténtica trabajados en los avances anteriores. Lee los dos archivos completos antes de valorar."
-    },
+ text:
+ "Confirma que el instrumento corresponde al mismo curso, resultado y evidencia auténtica trabajados en las etapas anteriores. Lee los dos archivos completos antes de valorar."
+ },
 
-    {
-      title:
-        "Valora con la rúbrica",
+ {
+ title:
+ "Valora con la rúbrica",
 
-      text:
-        "Revisa cada criterio de la rúbrica oficial de manera independiente y selecciona el nivel que mejor describe aquello que realmente observas en los archivos entregados."
-    },
+ text:
+ "Revisa cada criterio de la rúbrica oficial de manera independiente y selecciona el nivel que mejor describe aquello que realmente observas en los archivos entregados."
+ },
 
-    {
-      title:
-        "Sustenta y recomienda",
+ {
+ title:
+ "Sustenta y recomienda",
 
-      text:
-        "Explica brevemente qué elemento del trabajo sustenta tu valoración y formula al menos una recomendación concreta y accionable que pueda mejorar el instrumento."
-    },
+ text:
+ "Explica brevemente qué elemento del trabajo sustenta tu valoración y formula al menos una recomendación concreta y accionable que pueda mejorar el instrumento."
+ },
 
-    {
-      title:
-        "Decide y registra",
+ {
+ title:
+ "Decide y registra",
 
-      text:
-        "Como autor, analiza el feedback recibido. Decide qué conservar, modificar o descartar y registra los ajustes que realizaste antes de cerrar tu versión final."
-    }
+ text:
+ "Como autor, analiza el feedback recibido. Decide qué conservar, modificar o descartar y registra los ajustes que realizaste antes de cerrar tu versión final."
+ }
 
-  ];
+ ];
 
 
-  const coevalButtons =
-    root.querySelectorAll(
-      ".coeval-btn"
-    );
+ const coevalButtons =
+ root.querySelectorAll(
+ ".coeval-btn"
+ );
 
-  const coevalTitle =
-    root.querySelector(
-      "#coevalTitle"
-    );
+ const coevalTitle =
+ root.querySelector(
+ "#coevalTitle"
+ );
 
-  const coevalText =
-    root.querySelector(
-      "#coevalText"
-    );
+ const coevalText =
+ root.querySelector(
+ "#coevalText"
+ );
 
 
-  coevalButtons.forEach(
-    function(button){
+ coevalButtons.forEach(
+ function(button){
 
-      button.addEventListener(
-        "click",
-        function(){
+ button.addEventListener(
+ "click",
+ function(){
 
-          coevalButtons.forEach(
-            function(item){
+ coevalButtons.forEach(
+ function(item){
 
-              item.classList.remove(
-                "active"
-              );
+ item.classList.remove(
+ "active"
+ );
 
-            }
-          );
+ }
+ );
 
 
-          button.classList.add(
-            "active"
-          );
+ button.classList.add(
+ "active"
+ );
 
 
-          const data =
-            COEVAL[
-              Number(
-                button.dataset.coeval
-              )
-            ];
+ const data =
+ COEVAL[
+ Number(
+ button.dataset.coeval
+ )
+ ];
 
 
-          coevalTitle.textContent =
-            data.title;
+ coevalTitle.textContent =
+ data.title;
 
 
-          coevalText.textContent =
-            data.text;
+ coevalText.textContent =
+ data.text;
 
-        }
-      );
+ }
+ );
 
-    }
-  );
+ }
+ );
 
 })();
 </script>
